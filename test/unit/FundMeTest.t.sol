@@ -27,11 +27,7 @@ contract FundMeTest is Test {
     }
 
     function testOwner() external view {
-        assertEq(
-            fundMe.getOwner(),
-            msg.sender,
-            "Owner should be the contract deployer"
-        );
+        assertEq(fundMe.getOwner(), msg.sender, "Owner should be the contract deployer");
     }
 
     // function testPriceFeedVersionIsAccurate() external view {
@@ -128,10 +124,7 @@ contract FundMeTest is Test {
         vm.stopPrank();
 
         assert(address(fundMe).balance == 0);
-        assert(
-            startingFundedeBalance + startingOwnerBalance ==
-                fundMe.getOwner().balance
-        );
+        assert(startingFundedeBalance + startingOwnerBalance == fundMe.getOwner().balance);
     }
 
     // Can we do our withdraw function a cheaper way?
@@ -154,10 +147,7 @@ contract FundMeTest is Test {
         vm.stopPrank();
 
         assert(address(fundMe).balance == 0);
-        assert(
-            startingFundedeBalance + startingOwnerBalance ==
-                fundMe.getOwner().balance
-        );
+        assert(startingFundedeBalance + startingOwnerBalance == fundMe.getOwner().balance);
     }
 
     // function testGetConversionRate() external {
