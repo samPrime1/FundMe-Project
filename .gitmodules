@@ -1,9 +1,14 @@
 [submodule "lib/forge-std"]
-	path = lib/forge-std
-	url = https://github.com/foundry-rs/forge-std
+    path = lib/forge-std
+    url = https://github.com/foundry-rs/forge-std.git
+    branch = main
+
 [submodule "lib/chainlink-brownie-contracts"]
-	path = lib/chainlink-brownie-contracts
-	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+    path = lib/chainlink-brownie-contracts
+    url = https://github.com/smartcontractkit/chainlink-brownie-contracts.git
+    branch = main
+
 [submodule "lib/foundry-devops"]
-	path = lib/foundry-devops
-	url = https://github.com/cyfrin/foundry-devops
+    path = lib/foundry-devops
+    url = https://github.com/Cyfrin/foundry-devops.git
+    branch = main
